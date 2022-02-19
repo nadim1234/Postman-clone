@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>POSTMAN</h1>
+    </header>
+    <div class="container">
+        <h1>Welcome to PostMan</h1>
+        <div class="controls">
+            <!-- URL -->
+            <div class="control">
+                <p>URL</p>
+                <input type="text" id="url" placeholder="Enter URL here" />
+
+            </div>
+
+            <!-- RequestType -->
+            <div class="control">
+                <p>Request Type</p>
+                <div class="wrapper">
+                    <input type="radio" name="requestType" value="get" checked /> GET<br />
+                    <input type="radio" name="requestType" value="post" /> POST
+                </div>
+            </div>
+
+            <!-- Content Type -->
+            <div class="control">
+                <p>Content Type</p>
+                <div class="wrapper">
+                    <input type="radio" id="json" name="contentType" value="json" checked /> JSON<br />
+                    <input type="radio" id="customParameters" name="contentType" value="customParameters" /> Custom
+                    Parameters
+                </div>
+            </div>
+
+            <!-- Parameters -->
+            <div class="control paralist">
+                <p>Parameter</p>
+                <div class="parameters">
+                    <div class="parameterPair">
+                        <input type="text" id="parameterKey1" placeholder="Enter Parameter key" />&nbsp;
+                        <input type="text" id="parameterValue1" placeholder="Enter Parameter Value" />
+                        <button class="addParam">+</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Request JSON -->
+            <div class="control requestJson">
+                <p>Request JSON</p>
+                <textarea id="requestJsonText" rows="5" cols="50" placeholder="Enter JSON here"></textarea>
+            </div>
+
+            <!-- submit button -->
+            <div class="control">
+                <button id="submit">Submit</button>
+            </div>
+
+            <!-- Response -->
+            <div class="control">
+                <p>Response</p>
+                <textarea rows="10" cols="50" id="response" placeholder="Your Response will appear here!!"></textarea>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+<script src="index.js"></script>
+
+</html>

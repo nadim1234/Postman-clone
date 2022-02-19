@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Corinthia&family=Oswald:wght@300&family=Source+Code+Pro:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    color:white;
+}
+body{
+    font-family: 'Corinthia', cursive;
+font-family: 'Oswald', sans-serif;
+font-family: 'Source Code Pro', monospace;
+    background-color: grey;
+}
+header{
+    display:flex;
+    align-items: center;
+    background-color: orange;
+    height:50px;
+    color:white;
+}
+header h1{
+    margin:0 25px;
+}
+header p{
+    margin:0 25px;
+}
+.container{
+    margin-top:15px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.controls{
+    width:45vw;
+    margin-top:25px;
+    margin-bottom:10px;
+    border:1px solid #000;
+    box-shadow: 5px 2px 5px 5px rgba(0, 0, 0, 0.2);
+    /* height:75vh; */
+    padding:0px 5px;
+
+    /* overflow: scroll; */
+}
+.control{
+    margin: 15px 0px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.wrapper{
+    width:386px;
+}
+
+.parameterPair{
+    display: flex;
+    width:386px;
+}
+
+#submit{
+    display:block;
+    margin:0px auto;
+    color:white;
+    background-color: orange;
+    height:35px;
+    width:80px;
+}
+
+#submit:hover{
+    color:orange;
+    background-color: white;
+}
+
+#url{
+    width:62%;
+    height:25px;
+    outline:none;
+    border:1px solid #000;
+}
+
+input:focus, #url:focus,textarea:focus{
+    border:2px solid blue;
+}
+
+h1{
+    color:white;
+}
+textarea{
+    resize:none;
+    color:black;
+    border:none;
+    outline:none;
+}
+
+.addParam{
+    background-color: blue;
+    color:white;
+    width: 15px;
+    padding:2px;
+}
+
+#removeButton{
+    background-color: red;
+    color:white;
+    width:15px;
+    padding:2px;
+}
+
+input{
+    border-radius: 5px;
+    outline:none;
+    border:none;    
+}
